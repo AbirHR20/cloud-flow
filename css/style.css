@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca&display=swap');
+/*===============
+root css starts
+================*/
+
+:root {
+    --pf: "Lexend Deca", sans-serif;
+    --sf: "DM Sans", sans-serif;
+    --brand: #2928E8;
+    --text: #140B43;
+    --pera: #514A74;
+}
+
+/*===============
+root css ends
+================*/
+
+/*=================
+font size css starts
+==================*/
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-36 {
+    font-size: 36px;
+}
+
+.fs-43 {
+    font-size: 43px;
+}
+
+.fs-82 {
+    font-size: 82px;
+}
+
+/*=================
+font size css ends
+==================*/
+
+/*===================
+font family css starts
+====================*/
+
+.ld-med {
+    font-family: var(--pf);
+    font-weight: 500;
+}
+
+.ld-reg {
+    font-family: var(--pf);
+    font-weight: 400;
+}
+
+.dm-bold {
+    font-family: var(--sf);
+    font-weight: 700;
+}
+
+/*===================
+font family css starts
+====================*/
+
+/*===============
+basic css starts
+================*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*===============
+basic css ends
+================*/
+/*===============
+navbar css starts
+================*/
+
+.menu-color {
+    color: var(--text);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+    color: var(--text);
+}
+
+.nav-contact .contact-icon {
+    width: 55px;
+    height: 55px;
+    background-color: var(--text);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-contact .contact-icon a i {
+    color: #fff;
+}
+
+.nav-contact .contact-text {
+    color: var(--text);
+}
+
+.nav-contact .contact-text a {
+    color: var(--text);
+}
+
+.navbar {
+    background: linear-gradient(to right, rgba(249, 168, 143, 0.10), rgba(149, 213, 238, 0.10), rgba(249, 229, 143, 0.10));
+    z-index: 999;
+}
+
+.navfix{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: #ddd;
+    animation: fix linear 1s;
+}
+
+@keyframes fix{
+    from{
+        top: -50px;
+    }
+    to{
+        top: 0px;
+    }
+}
+
+/*===============
+navbar css ends
+================*/
+
+/*===============
+banner css starts
+================*/
+
+.banner {
+    background: linear-gradient(to right, rgba(249, 168, 143, 0.10), rgba(149, 213, 238, 0.10), rgba(249, 229, 143, 0.10));
+    padding: 150px 0;
+}
+
+.banner .banner-text h1 {
+    color: var(--text);
+    margin-bottom: 24px;
+}
+
+.banner .banner-text p {
+    color: var(--pera);
+    margin-bottom: 40px;
+}
+
+.banner .banner-text span {
+    color: #939393;
+}
+
+.banner .banner-text a {
+    color: #fff;
+    background-color: var(--brand);
+}
+
+.banner .banner-text .btn {
+    padding: 0 !important;
+    width: 161px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .banner-img .img1 {
+    top: 37%;
+    left: 87%;
+    animation: img1 7s infinite linear;
+    -webkit-animation: img1 7s infinite linear;
+}
+
+@keyframes img1 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40% {
+        -webkit-transform: translate3d(0px, -30px, 0);
+        transform: translate3d(0px, -30px, 0);
+        -moz-transform: translate3d(0px, -30px, 0);
+        -ms-transform: translate3d(0px, -30px, 0);
+        -o-transform: translate3d(0px, -30px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.banner .banner-img .img2 {
+    top: 18%;
+    left: 58%;
+    animation: img2 7s infinite linear;
+    -webkit-animation: img2 7s infinite linear;
+}
+
+@keyframes img2 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40% {
+        -webkit-transform: translate3d(-30px, 0px, 0);
+        transform: translate3d(-30px, 0px, 0);
+        -moz-transform: translate3d(-30px, 0px, 0);
+        -ms-transform: translate3d(-30px, 0px, 0);
+        -o-transform: translate3d(-30px, 0px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.banner .banner-img .img3 {
+    top: 30%;
+    left: 50%;
+    z-index: 3;
+    animation: img3 10s infinite linear;
+    -webkit-animation: img3 10s infinite linear;
+}
+
+@keyframes img3 {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40% {
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+        -moz-transform: translate3d(0, -30px, 0);
+        -ms-transform: translate3d(0, -30px, 0);
+        -o-transform: translate3d(0, -30px, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.banner .banner-img .img4 {
+    top: 20%;
+    left: 65%;
+    z-index: 1;
+}
+
+.banner .banner-img .img5 {
+    top: 15%;
+    left: 64%;
+    z-index: 1;
+}
+
+.banner .banner-img .img6 {
+    top: 80%;
+    left: 80%;
+}
+
+.banner .banner-img .img7 {
+    top: 50%;
+    left: 75%;
+    z-index: 2;
+}
+
+.banner .banner-img .img8 {
+    top: 60%;
+    left: 39%;
+    z-index: 4;
+}
+
+/*===============
+banner css ends
+================*/
+
+/*===============
+services css starts
+================*/
+
+.services {
+    padding: 100px 0;
+}
+
+.services header {
+    padding-bottom: 60px;
+    color: var(--text);
+}
+
+.services .services-item1 {
+    background: rgba(149, 213, 238, 0.10);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.services .services-item2 {
+    background: #FAF7F0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.services .services-item3 {
+    background: #FAF7F0;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.services .services-item4 {
+    background: rgba(149, 213, 238, 0.10);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.services .services-items img {
+    width: 80px;
+    height: 80px;
+    margin-right: 35px;
+}
+
+.services .services-items h1 {
+    color: var(--text);
+}
+
+.services .services-items p {
+    color: var(--pera);
+}
+
+/*===============
+services css ends
+================*/
+
+/*===============
+marq css starts
+================*/
+
+.marq {
+    background: #F5F5F7;
+    padding: 40px 0;
+    margin: 120px 0;
+}
+
+.marq h1{
+    color: var(--text);
+}
+
+.marq span {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text);
+}
+
+/*===============
+marq css ends
+================*/
+
+/*===============
+about css starts
+================*/
+
+.about{
+    padding-bottom: 120px;
+}
+
+.about .about-text h1{
+    color: var(--text);
+    margin-bottom: 25px;
+}
+
+.about .about-text p{
+    color: var(--pera);
+    margin-bottom: 46px;
+}
+
+/*===============
+about css ends
+================*/
+
+/*===============
+gallery css starts
+================*/
+
+.gallery header{
+    padding-bottom: 60px;
+}
+
+.gallery .g-item1{
+    background-color: rgba(177, 149, 238, 0.20);
+    padding: 40px;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+.gallery .g-item2{
+    background-color: rgba(149, 213, 238, 0.20);
+    padding: 40px;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+.gallery .g-item3{
+    background-color: rgba(249, 229, 143, 0.20);
+    padding: 40px;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+.gallery .g-item4{
+    background-color: rgba(150, 238, 149, 0.20);
+    padding: 40px;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+.gallery .g-item5{
+    background-color: rgba(249, 168, 143, 0.20);
+    padding: 40px;
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+
+.gallery h3{
+    color: var(--text);
+}
+
+.gallery p{
+    color: var(--pera);
+}
+
+/*===============
+gallery css ends
+================*/
+
+/*===============
+testimonial css starts
+================*/
+
+.testimonial {
+    background: #FAF7F0;
+    padding: 120px 0;
+    margin: 120px 0;
+}
+
+.testimonial .qute{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--brand);
+}
+
+.testimonial .qute i{
+    color: #fff;
+}
+
+.testimonial p{
+    margin-top: 22px;
+    margin-bottom: 52px;
+    color: var(--pera);
+}
+
+.testimonial .line{
+    height: 1px;
+    width: 55px;
+    margin-right: 5px;
+    background-color: var(--pera);
+}
+
+/*===============
+testimonial css ends
+================*/
+
+/*===============
+about2 css starts
+================*/
+
+.about2-back{
+    background: url(../images/about2_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    padding: 30px 0;
+    border-radius: 20px;
+    transform: translateY(-130%);
+}
+
+.about2-item{
+    display: flex;
+    justify-content: space-between;
+    transform: scale(0.8);
+}
+
+.about2-item .icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background: #FAF7F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===============
+about2 css ends
+================*/
+
+/*===============
+about3 css starts
+================*/
+
+.about3{
+    margin-bottom: 120px;
+}
+
+.about3 .a3-txt h1,li{
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.about3 .a3-txt p,.pera{
+    color: var(--pera);
+    margin-bottom: 50px;
+}
+
+.about3 .icon{
+    margin-top: 10px;
+}
+
+/*===============
+about3 css ends
+================*/
+
+/*===============
+message css starts
+=================*/
+
+.message{
+    margin-bottom: 120px;
+}
+
+.message .msg-text h1{
+    color: var(--text);
+}
+
+.message .msg-text p{
+    color: var(--pera);
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+
+.message .contact-icon{
+    width: 55px;
+    height: 55px;
+    background-color: #F5F5F7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message .contact-icon i{
+    color: #95D5EE;
+}
+
+.message .contact-text{
+    margin-top: 10px;
+}
+
+.message .contact-text a{
+    color: var(--text);
+}
+
+.message input{
+    border-radius: 20px;
+}
+
+.message select{
+    border-radius: 20px;
+}
+
+.message textarea{
+    border-radius: 20px;
+}
+
+.message .btn{
+    background: var(--brand);
+    color: #fff;
+    padding: 0 !important;
+    width: 161px;
+    height: 60px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*===============
+message css ends
+================*/
+
+/*===============
+blog css starts
+================*/
+
+.blog{
+    margin-bottom: 120px;
+}
+
+.blog header{
+    margin-bottom: 60px;
+}
+
+.blog header h1{
+    color: var(--text);
+}
+
+.blog .blog-item{
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    transform: scale(0.9);
+}
+
+.blog .blog-im .date{
+    width: 30%;
+    background-color: var(--brand);
+    padding: 5px;
+    transform: translateY(-30px);
+    border-radius: 0 5px 0 0;
+}
+
+.blog .blog-im .date p{
+    color: #fff;
+}
+
+.blog .blog-txt .meta{
+    margin-bottom: 20px;
+}
+
+.blog .blog-txt .meta span{
+    color: var(--pera);
+}
+
+.blog .blog-txt h3{
+    color: var(--text);
+    padding-bottom: 30px;
+}
+
+.blog .blog-txt a{
+    color: var(--text);
+    display: inline-block;
+    padding-bottom: 40px;
+}
+
+.blog .fa-chevron-left {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background-color: var(--brand);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: -25%;
+    right: 3%;
+    z-index: 999;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.blog .fa-chevron-right {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background-color: var(--brand);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    position: absolute;
+    top: -25%;
+    right: 0%;
+    z-index: 999;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+/*===============
+blog css ends
+================*/
+
+/*===============
+subs css starts
+================*/
+
+.subs{
+    background-color: #F5F5F7;
+    padding: 80px 0;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.subs-im{
+    position: absolute;
+    top: -30%;
+    left: 0px;
+}
+
+.subs .subs-txt h1{
+    color: var(--text);
+    padding-bottom: 45px;
+}
+
+.subs .subs-txt h2{
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text);
+    position: absolute;
+    right: 28%;
+    bottom: 30%;
+    opacity: 0.1;
+}
+
+.subs input{
+    border-radius: 30px;
+}
+
+.subs .btn{
+    background-color: var(--brand) !important;
+    color: #fff !important;
+    border-radius: 30px;
+}
+
+/*===============
+subs css ends
+================*/
+
+/*===============
+footer css starts
+================*/
+
+footer .line{
+    height: 1px;
+    background-color: #d1d1d1;
+    margin-top: 30px;
+}
+
+footer .logo-area{
+    margin-bottom: 60px;
+}
+
+footer h3{
+    color: var(--text);
+}
+
+footer p{
+    color: var(--pera);
+}
+
+footer .icon-item{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+
+footer .icon-item i{
+    color: var(--text) !important;
+}
+
+footer a{
+    color: var(--pera);
+}
+
+footer .footer-cnt i{
+    color: var(--brand);
+}
+
+footer .cnt-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*===============
+footer css ends
+================*/
